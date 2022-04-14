@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 <head>
     <meta charset="utf-8" />
     <title>Pro-Gamer</title>
     <link rel="shortcut icon" href="Gamer Logo.jpg">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
         h1 {
             font-size: 70px;
             font-family: 'Curlz MT';
             text-align: center;
             color: white;
             border: 5px solid (270.33deg, rgba(0, 1, 100, 0.69) 2.51%, rgba(1, 51, 46, 0.95) 90.45%);
+            width: 100%;
             height: 400px;
+            margin: -8px;
+            margin-top: 0.4px;
             background: linear-gradient(270.33deg, rgba(0, 1, 100, 0.69) 2.51%, rgba(1, 51, 46, 0.95) 90.45%);
             padding: 20px;
             animation-name: example;
             animation-duration: 200s;
             animation-delay: -2s;
-            animation-iteration-count: infinite;
+             animation-iteration-count: infinite;
         }
 
         @keyframes example {
@@ -57,7 +54,7 @@
             height: 200px;
             animation-name: logo_anim;
             animation-duration: 15s;
-            animation-iteration-count: infinite;
+             animation-iteration-count: infinite;
         }
 
         @keyframes logo_anim {
@@ -85,7 +82,7 @@
             border: 5px solid black;
             padding: 5px;
             border-radius: 5%;
-            margin-top: 150px;
+            margin-top: 0px;
             margin-left: 100px;
         }
 
@@ -130,20 +127,16 @@
             padding: 20px;
         }
 
-        .shapesoverall {
-            position: absolute;
-            top: 120px;
-        }
-
         #shape1 {
             height: 50px;
             width: 50px;
             background-color: darkgreen;
             border-radius: 30%;
+            margin-top: -400px;
             margin-left: 20px;
             animation-name: shape1_anim;
             animation-duration: 30s;
-            animation-iteration-count: infinite;
+             animation-iteration-count: infinite;
         }
 
         @keyframes shape1_anim {
@@ -316,18 +309,16 @@
             }
         }
 
-        #last {
+        h6 {
             font-size: 20px;
             color: white;
             text-align: center;
             border: 5px solid black;
-            border-radius: 10px;
             background-color: black;
             height: 300px;
             width: 90%;
+            margin-left: 60px;
             padding: 30px;
-            margin: 100px auto;
-
         }
 
         #facebook {
@@ -346,29 +337,27 @@
 
         #myself {
             text-align: left;
-            position: sticky;
         }
 
         #follow {
-            color: grey;
-            margin: -100px 1110px;
             text-align: center;
-            border: 2px solid grey;
-            width: 300px;
+            margin-right: 60px;
+            margin-top: -115px;
+            border: 2px solid white;
+            width: 18%;
             height: 130px;
+            margin-left: 1110px;
             padding: 10px;
         }
 
         #about {
-            position: sticky;
             border: 2px solid white;
             width: 10%;
             display: inline-block;
             padding: 5px;
             margin-top: -5px;
         }
-
-        nav {
+       nav {
             position: sticky;
             top: 0px;
         }
@@ -376,11 +365,14 @@
         .navbar {
             background-color: #666;
             border: 2px solid #666;
+            width: 1603px;
+            margin-left: -8px;
+            margin-top: -8px;
             height: 80px;
         }
 
         .navbar ul {
-            padding: 15px;
+            overflow: auto;
         }
 
         .navbar li {
@@ -390,10 +382,10 @@
             font-weight: bold;
             font-size: 17px;
 
-
         }
 
         .navbar li a {
+            padding: 3px 3px;
             text-decoration: none;
             color: white;
             margin: 50px;
@@ -419,95 +411,23 @@
 
         .gamerlogo {
             float: left;
-            border: 2px solid white;
-            border-radius: 5px;
             width: 50px;
             height: 50px;
+            margin-top: 0px;
             margin-left: 30px;
         }
 
         body {
             background: url('Gamer Logo.jpg');
             background-repeat: no-repeat;
-            overflow-x: hidden;
         }
 
         #search-icon {
             position: relative;
             top: 15px;
-            left: 508px;
+            left: 484px;
             width: 20px;
             height: 25px;
-        }
-
-        @media only screen and (max-width:1520px) {
-            h1 {
-                width: 2000px;
-            }
-
-            .navbar {
-                width: 2050px;
-                height: 100px;
-            }
-
-        }
-
-        @media only screen and (max-width:1190px) {
-            h1 {
-                width: 1920px;
-                margin-top: -4.6px;
-            }
-
-            #progamer-resp {
-                display: inline-block;
-            }
-
-            .search-resp {
-                position: relative;
-                right: 200px;
-                bottom: 50px;
-            }
-
-            #search-icon {
-                float: right;
-                width: 60px;
-                height: 60px;
-                padding: 0px 350px;
-
-            }
-
-            .search input {
-                padding: auto;
-                font-size: 40px;
-                width: 500px;
-                height: 50px;
-            }
-
-            .navbar {
-                width: 1955px;
-                height: 300px;
-            }
-
-            .navbar li {
-                margin: 0px 500px;
-                font-size: 50px;
-                float: none;
-            }
-
-            .gamerlogo {
-                width: 200px;
-                height: 250px;
-                border-radius: 50%;
-            }
-
-            .shapesoverall{
-                position:absolute;
-               top:400px;
-            }
-            body {
-                background-position: 100px 220px;
-
-            }
         }
     </style>
 </head>
@@ -520,41 +440,36 @@
             <li><a href="#laptop">Download</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#about">Contact us</a></li>
-            <div class="search-resp">
-                <div class="search"><input type="text" placeholder="Search in this website"></div>
-                <img id="search-icon" src="search icon.jpg">
-            </div>
+            <div class="search"><input type="text" placeholder="Search in this website"></div>
+            <img id="search-icon" src="search icon.jpg">
 
         </ul>
 
     </nav>
-
-    <div id="progamer-resp">
-        <h1>Pro-Gamer</span><br /><img id="logo" src="109392.jpg" />
+    <div>
+        <h1>Pro-Gamer<br /><img id="logo" src="109392.jpg" /></h1>
     </div>
-    <div class="shapesoverall">
-        <div id="shape1"></div>
-        <div id="shape2"></div><br />
-        <div id="shape3"></div>
-        <div id="shape4"></div>
-        <div id="shape5"></div>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </div>
+    <div id="shape1"></div>
+    <div id="shape2"></div><br />
+    <div id="shape3"></div>
+    <div id="shape4"></div>
+    <div id="shape5"></div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
     <img id="image3" src="Image 3.jpg"></img><br />
     <img id="laptop" src="Laptop and Mobile.jpg" alt="Missing"
         width="600" /><br /><br /><br /><br /><br /><br /><br /><br />
     <a href="https://drive.google.com/file/d/1mqV4qGsPOvPxmEOqGmhk3up65rdzDTTI/view?usp=sharing"><button>Click
             Me</button></a><br /><br /><br /><br /><br />
-    <div id="last">
+    <h6>
         <div id="about">About-Us</div><br /><br />
         <div id="myself">I am Zain Manzoor, an Asian.... <br />Studying at University of Engineering and
-            Technology.<br /> If you like this page, so you can follow me on youtube<br />facebook.</div>
+            Technology.<br /> If you like this page, so you can follow me on youtube<br />facebook.</div><br />
         <div id="follow"><i>Follow me on Facebook</i><br /><a id="facebook"
                 href="https://www.facebook.com/profile.php?id=100073762660787">Facebook</a><br /><br /><i>Follow me on
                 Instagram</i><br /><a id="instagram" href="https://www.instagram.com/zain_manzoor267/">Instagram</a>
         </div>
-    </div>
+    </h6>
 
 </body>
 
